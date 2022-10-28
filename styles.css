@@ -208,7 +208,7 @@ img {
     115deg,
     rgba(58, 58, 158, 0.9),
     rgba(136, 136, 206, 0.5)
-  ),url(/var/home/operador/Descargas/pc.jpg);
+  ),url(https://images.unsplash.com/photo-1626218174358-7769486c4b79?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
   background-size: cover;
   background-position: 50%;
   display: flex; 

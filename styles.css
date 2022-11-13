@@ -111,8 +111,6 @@ img {
   display: flex;
   justify-content: flex-start;
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 4rem;
   background: linear-gradient(50deg,var(--main-black), rgb(73, 73, 73));
@@ -136,6 +134,7 @@ img {
 }
 
 .nav-list a {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-shadow: 1px 1px 2px black;
   font-size: 23px;
   width: 520px;
@@ -166,7 +165,7 @@ img {
   opacity: 0;
   transition: opacity .3s ease-in-out;
   border-radius: 0px;
-  
+  padding: 1.6rem;
 }
 .nav-list a:active{
   color: transparent;

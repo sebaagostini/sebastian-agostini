@@ -11,15 +11,16 @@
     <title>Sebastian Agostini</title>
   </header>
 <!-- Nav bar -->
-<div class="loader">
+<div class="loading show">
+  <div class="spin"></div>
+</div>
   
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-
-  <script type="text/javascript">
-  $(window).load(function() {
-      $(".loader").fadeOut("slow");
-  });
-  </script></div>
+  <script>
+    // Loading
+    var Loading=(loadingDelayHidden=0)=>{let loading=null;const myLoadingDelayHidden=loadingDelayHidden;let imgs=[];let lenImgs=0;let counterImgsLoading=0;function incrementCounterImgs(){counterImgsLoading+=1;if(counterImgsLoading===lenImgs){hideLoading()}}function hideLoading(){if(loading!==null){loading.classList.remove('show');setTimeout(function(){loading.remove()},myLoadingDelayHidden)}}function init(){document.addEventListener('DOMContentLoaded',function(){loading=document.querySelector('.loading');imgs=Array.from(document.images);lenImgs=imgs.length;if(imgs.length===0){hideLoading()}else{imgs.forEach(function(img){img.addEventListener('load',incrementCounterImgs,false)})}})}return{'init':init}}
+    
+    Loading(3000).init();
+    </script>
 <nav id="navbar" class="nav">
   <ul class="nav-list">
     <li>

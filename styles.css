@@ -243,17 +243,37 @@ img {
     font-size: 4rem;
   }
 }
-
-.loader {
+/*pantalla de carga*/
+.loading {
   position: fixed;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 9999;
-  background: url('images/pageLoader.gif') 50% 50% no-repeat rgb(249,249,249);
-  opacity: .8;
+  transition: 1s all;
+  opacity: 0;
 }
+.loading.show {
+  opacity: 1;
+}
+.loading .spin {
+  border: 3px solid hsla(185, 100%, 62%, 0.2);
+  border-top-color: #3cefff;
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+to {
+  transform: rotate(360deg);
+}
+}     
 
 /* "Automagic" image grid using no media queries */
 .projects-grid {

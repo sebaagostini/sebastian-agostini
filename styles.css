@@ -133,9 +133,10 @@ img {
     margin: 0 1rem;
   }
 }
-
+@import url('https://fonts.googleapis.com/css?family=Lato:400');
 .nav-list a {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+  font-family: 'Lato', sans-serif;
   text-shadow: 1px 1px 2px black;
   font-size: 23px;
   width: 520px;

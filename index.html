@@ -15,12 +15,12 @@
   <div class="spin"></div>
 </div>
   
-  <script>
-    // Loading
+  <script src="https://github.com/sebaagostini/sebastian-agostini/blob/main/script.js"></script>
+    <!--
     var Loading=(loadingDelayHidden=0)=>{let loading=null;const myLoadingDelayHidden=loadingDelayHidden;let imgs=[];let lenImgs=0;let counterImgsLoading=0;function incrementCounterImgs(){counterImgsLoading+=1;if(counterImgsLoading===lenImgs){hideLoading()}}function hideLoading(){if(loading!==null){loading.classList.remove('show');setTimeout(function(){loading.remove()},myLoadingDelayHidden)}}function init(){document.addEventListener('DOMContentLoaded',function(){loading=document.querySelector('.loading');imgs=Array.from(document.images);lenImgs=imgs.length;if(imgs.length===0){hideLoading()}else{imgs.forEach(function(img){img.addEventListener('load',incrementCounterImgs,false)})}})}return{'init':init}}
     
     Loading(3000).init();
-    </script>
+    </script>-->
 <nav id="navbar" class="nav">
   <ul class="nav-list">
     <li>
